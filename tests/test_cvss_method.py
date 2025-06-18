@@ -2,6 +2,9 @@ import unittest
 from unittest.mock import AsyncMock, patch, MagicMock
 import pandas as pd
 import asyncio
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import sys
 import os

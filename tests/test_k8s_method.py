@@ -1,6 +1,9 @@
 import unittest
 import pandas as pd
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import sys
 import os

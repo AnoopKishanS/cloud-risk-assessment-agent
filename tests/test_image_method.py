@@ -4,6 +4,9 @@ import os
 from unittest.mock import patch, mock_open
 from prettytable import PrettyTable
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import sys
 import os
