@@ -65,7 +65,7 @@ class TestProcessAwsScan(unittest.TestCase):
                             }
                         },
                         {
-                            "ID": "AWS002",
+                            "ID": "AWS0022",
                             "AVDID": "AVD-AWS-0001",
                             "Title": "S3 bucket is public",
                             "Description": "The S3 bucket is public",
