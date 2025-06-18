@@ -2,6 +2,14 @@ import unittest
 from unittest.mock import AsyncMock, patch, MagicMock
 import pandas as pd
 import asyncio
+
+import sys
+import os
+from pathlib import Path
+current_dir = Path(__file__).resolve().parent
+src_path = current_dir.parent / "src"
+sys.path.insert(0, str(src_path))
+
 from src.scan.cvss_score import generate_cvss, safe_cvss_score
 
 

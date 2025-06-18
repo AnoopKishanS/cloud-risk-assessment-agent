@@ -4,6 +4,14 @@ import os
 from unittest.mock import patch, mock_open
 from prettytable import PrettyTable
 import pandas as pd
+
+import sys
+import os
+from pathlib import Path
+current_dir = Path(__file__).resolve().parent
+src_path = current_dir.parent / "src"
+sys.path.insert(0, str(src_path))
+
 from src.scan.image import (
     scan_image,
     read_image_full_report,

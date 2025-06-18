@@ -1,6 +1,14 @@
 import unittest
 import pandas as pd
 import json
+
+import sys
+import os
+from pathlib import Path
+current_dir = Path(__file__).resolve().parent
+src_path = current_dir.parent / "src"
+sys.path.insert(0, str(src_path))
+
 from src.scan.kubernetes import process_k8s_scan
 
 
